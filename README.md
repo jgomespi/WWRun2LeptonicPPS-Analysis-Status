@@ -2,6 +2,7 @@
 
 Public, high-level progress dashboard for a Run 2 leptonic diboson analysis with forward proton tagging.
 
+**Public dashboard:** https://jgomespi.github.io/WWRun2LeptonicPPS-Analysis-Status/  
 **Current phase:** 2018 end-to-end closure — kinematic-fit production in progress.  
 **Milestone progress:** 2 of 7 major phases complete; phase 3 is active.  
 **Last updated:** 18 August 2026.
@@ -54,6 +55,4 @@ This public status page is updated only when a major project-management mileston
 
 ## GitHub Pages
 
-The repository includes a static dashboard and a GitHub Pages deployment workflow. Once Pages is enabled for **GitHub Actions**, the public site will be available at:
-
-`https://jgomespi.github.io/WWRun2LeptonicPPS-Analysis-Status/`
+The site is deployed from this repository using GitHub Actions and is intended to remain a sanitized public project-status view only.
