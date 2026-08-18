@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Public progress dashboard for the WW Run 2 leptonic PPS analysis." />
+  <title>WW Run 2 Leptonic PPS — Analysis Status</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">PUBLIC PROJECT STATUS</p>
+        <h1>WW Run 2 Leptonic PPS<br />Analysis Status</h1>
+        <p class="subtitle">High-level progress tracking for a Run 2 leptonic diboson analysis with forward proton tagging.</p>
+      </div>
+      <div class="update-card" aria-label="Last updated">
+        <span>Last updated</span>
+        <strong>18 August 2026</strong>
+      </div>
+    </header>
+
+    <section class="summary-grid" aria-label="Project summary">
+      <article class="summary-card active">
+        <span class="card-label">Current phase</span>
+        <strong>2018 end-to-end closure</strong>
+        <p>Kinematic reconstruction is actively running and being validated.</p>
+      </article>
+      <article class="summary-card">
+        <span class="card-label">Major milestones</span>
+        <strong>2 of 7 complete</strong>
+        <p>Phase 3 is currently in progress.</p>
+      </article>
+      <article class="summary-card">
+        <span class="card-label">Analysis mode</span>
+        <strong>Blinded development</strong>
+        <p>Observed signal-region results remain gated.</p>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PROGRESS</p>
+          <h2>Milestone roadmap</h2>
+        </div>
+        <p class="section-note">Completion is milestone-based, not an estimate of calendar time.</p>
+      </div>
+
+      <div class="progress-track" aria-label="2 of 7 milestones complete, third in progress">
+        <span class="segment done"></span>
+        <span class="segment done"></span>
+        <span class="segment active"></span>
+        <span class="segment upcoming"></span>
+        <span class="segment upcoming"></span>
+        <span class="segment upcoming"></span>
+        <span class="segment gated"></span>
+      </div>
+
+      <div class="roadmap">
+        <article class="milestone complete">
+          <div class="step">01</div>
+          <div>
+            <span class="status">Complete</span>
+            <h3>Scalable workflow & reproducibility</h3>
+            <p>Partitioned processing, provenance, bounded-memory execution and a reproducible production model.</p>
+          </div>
+        </article>
+
+        <article class="milestone complete">
+          <div class="step">02</div>
+          <div>
+            <span class="status">Complete</span>
+            <h3>2018 nominal analysis & validation</h3>
+            <p>Nominal reconstruction, control-region validation and fail-closed signal-region blinding.</p>
+          </div>
+        </article>
+
+        <article class="milestone in-progress">
+          <div class="step">03</div>
+          <div>
+            <span class="status">In progress</span>
+            <h3>2018 kinematic reconstruction</h3>
+            <p>Complete the signal-region kinematic reconstruction and perform a strict completeness audit.</p>
+          </div>
+        </article>
+
+        <article class="milestone next">
+          <div class="step">04</div>
+          <div>
+            <span class="status">Next</span>
+            <h3>2018 blinded statistical model</h3>
+            <p>Build validated templates and the first expected-only statistical inference model.</p>
+          </div>
+        </article>
+
+        <article class="milestone planned">
+          <div class="step">05</div>
+          <div>
+            <span class="status">Planned</span>
+            <h3>Full systematic closure</h3>
+            <p>Close detector, reconstruction, migration and normalization uncertainty treatments.</p>
+          </div>
+        </article>
+
+        <article class="milestone planned">
+          <div class="step">06</div>
+          <div>
+            <span class="status">Planned</span>
+            <h3>Full Run 2 combination</h3>
+            <p>Extend the validated workflow to all Run 2 data-taking periods and audit inter-year correlations.</p>
+          </div>
+        </article>
+
+        <article class="milestone gated">
+          <div class="step">07</div>
+          <div>
+            <span class="status">Gated</span>
+            <h3>Final review & observed result</h3>
+            <p>Freeze the analysis, complete review, and proceed to observed inference only after approval.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel flow-panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CRITICAL PATH</p>
+          <h2>From workflow to final result</h2>
+        </div>
+      </div>
+
+      <div class="flow" role="img" aria-label="Workflow redesign to final observed result">
+        <div class="flow-node done"><span>1</span><strong>Workflow redesign</strong><small>Complete</small></div>
+        <div class="arrow">→</div>
+        <div class="flow-node done"><span>2</span><strong>2018 nominal validation</strong><small>Complete</small></div>
+        <div class="arrow">→</div>
+        <div class="flow-node active"><span>3</span><strong>Kinematic reconstruction</strong><small>In progress</small></div>
+        <div class="arrow">→</div>
+        <div class="flow-node"><span>4</span><strong>Blinded model</strong><small>Next</small></div>
+        <div class="arrow">→</div>
+        <div class="flow-node"><span>5</span><strong>Systematic closure</strong><small>Planned</small></div>
+        <div class="arrow">→</div>
+        <div class="flow-node"><span>6</span><strong>Run 2 combination</strong><small>Planned</small></div>
+        <div class="arrow">→</div>
+        <div class="flow-node gated"><span>7</span><strong>Observed result</strong><small>Gated</small></div>
+      </div>
+    </section>
+
+    <section class="panel two-column">
+      <div>
+        <p class="eyebrow">CURRENT FOCUS</p>
+        <h2>What is happening now?</h2>
+        <p>The active milestone is the 2018 signal-region kinematic reconstruction. The next gate is a completeness and quality audit, followed by construction of the first blinded statistical model.</p>
+      </div>
+      <div class="scope-box">
+        <h3>Public scope</h3>
+        <p>This page intentionally contains project-management information only. It does not expose analysis code, storage paths, event counts, yields, selection thresholds, fitted numerical results, limits, coupling values, dataset inventories, or internal review material.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Public progress dashboard · WW Run 2 Leptonic PPS analysis</p>
+      <a href="https://github.com/jgomespi/WWRun2LeptonicPPS-Analysis-Status">View repository</a>
+    </footer>
+  </main>
+</body>
+</html>
