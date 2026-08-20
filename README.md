@@ -3,9 +3,9 @@
 Public, high-level progress dashboard for a Run 2 leptonic diboson analysis with forward proton tagging.
 
 **Public dashboard:** https://jgomespi.github.io/WWRun2LeptonicPPS-Analysis-Status/  
-**Current phase:** 2018 end-to-end closure — kinematic-fit production in progress.  
-**Milestone progress:** 2 of 7 major phases complete; phase 3 is active.  
-**Last updated:** 18 August 2026.
+**Current phase:** 2018 blinded statistical-model construction.  
+**Milestone progress:** 3 of 7 major phases complete; phase 4 is active.  
+**Last updated:** 20 August 2026.
 
 ## Public scope
 
@@ -19,8 +19,8 @@ The public dashboard is designed to answer one question: **where is the analysis
 |---|---|---|
 | 1. Scalable workflow and reproducibility | ✅ Complete | Partitioned processing, provenance, bounded-memory execution |
 | 2. 2018 nominal analysis and validation | ✅ Complete | Nominal reconstruction, control-region validation, blinded signal-region handling |
-| 3. 2018 kinematic reconstruction | 🔵 In progress | Complete and audit the signal-region kinematic-fit production |
-| 4. 2018 blinded statistical model | ⏭ Next | Build templates, datacards, workspace and expected-only inference |
+| 3. 2018 kinematic reconstruction | ✅ Complete | Signal-region kinematic reconstruction and completeness audit closed |
+| 4. 2018 blinded statistical model | 🔵 In progress | Build templates, datacards, workspace and expected-only inference |
 | 5. Full systematic closure | ⏳ Planned | Validate detector, reconstruction and normalization uncertainties |
 | 6. Full Run 2 combination | ⏳ Planned | Extend to all Run 2 periods and audit inter-year correlations |
 | 7. Final review and observed result | 🔒 Gated | Freeze the analysis, complete review, then proceed to approved unblinding |
@@ -30,8 +30,8 @@ The public dashboard is designed to answer one question: **where is the analysis
 ```mermaid
 flowchart LR
     A[Workflow redesign\nComplete] --> B[2018 nominal validation\nComplete]
-    B --> C[2018 kinematic reconstruction\nIn progress]
-    C --> D[2018 blinded statistical model\nNext]
+    B --> C[2018 kinematic reconstruction\nComplete]
+    C --> D[2018 blinded statistical model\nIn progress]
     D --> E[Systematic closure\nPlanned]
     E --> F[Full Run 2 combination\nPlanned]
     F --> G[Final review and observed result\nGated]
@@ -39,7 +39,7 @@ flowchart LR
 
 ## Current focus
 
-The active work is the production and validation of the 2018 signal-region kinematic reconstruction. The immediate gate after that is a completeness audit, followed by construction of the first blinded statistical model.
+The 2018 signal-region kinematic reconstruction is complete and audited. The active work is construction and validation of the first blinded 2018 template and statistical model, with expected-only treatment of the signal region.
 
 ## Status policy
 
