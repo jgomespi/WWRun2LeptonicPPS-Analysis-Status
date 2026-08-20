@@ -20,7 +20,7 @@ The public dashboard is designed to answer one question: **where is the analysis
 | 1. Scalable workflow and reproducibility | ✅ Complete | Partitioned processing, provenance, bounded-memory execution |
 | 2. 2018 nominal analysis and validation | ✅ Complete | Nominal reconstruction, control-region validation, blinded signal-region handling |
 | 3. 2018 kinematic reconstruction | ✅ Complete | Signal-region kinematic reconstruction and completeness audit closed |
-| 4. 2018 blinded statistical model | 🔵 In progress | Build templates, datacards, workspace and expected-only inference |
+| 4. 2018 blinded statistical model | 🔵 In progress | Validate systematic inputs, build templates, datacards, workspace and expected-only inference |
 | 5. Full systematic closure | ⏳ Planned | Validate detector, reconstruction and normalization uncertainties |
 | 6. Full Run 2 combination | ⏳ Planned | Extend to all Run 2 periods and audit inter-year correlations |
 | 7. Final review and observed result | 🔒 Gated | Freeze the analysis, complete review, then proceed to approved unblinding |
@@ -39,11 +39,11 @@ flowchart LR
 
 ## Current focus
 
-The 2018 signal-region kinematic reconstruction is complete and audited. The active work is construction and validation of the first blinded 2018 template and statistical model, with expected-only treatment of the signal region.
+The 2018 signal-region kinematic reconstruction is complete and audited. Before freezing the first blinded templates, a systematic-input consistency audit identified a correction needed in a derived uncertainty treatment while leaving the central nominal reconstruction unchanged. The correction has been validated and is being propagated through a fresh 2018 derived production. The next gate is closure of that regenerated sample, followed by blinded templates and expected-only inference.
 
 ## Status policy
 
-This public status page is updated only when a major project-management milestone changes state. Technical details remain in the private analysis repository.
+This public status page is updated only when a major project-management milestone changes state or when the active gate within a milestone materially changes. Technical details remain in the private analysis repository.
 
 ### Status legend
 
