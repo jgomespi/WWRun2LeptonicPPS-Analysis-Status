@@ -4,8 +4,8 @@ Public, high-level progress dashboard for a Run 2 leptonic diboson analysis with
 
 **Public dashboard:** https://jgomespi.github.io/WWRun2LeptonicPPS-Analysis-Status/  
 **Current phase:** 2018 blinded statistical-model validation.  
-**Milestone progress:** 3 of 7 major phases complete; phase 4 is active.  
-**Last updated:** 21 August 2026.
+**Milestone progress:** 3 of 7 major phases complete; phase 4 is in late-stage validation.  
+**Last updated:** 9 September 2026.
 
 ## Public scope
 
@@ -20,8 +20,8 @@ The public dashboard is designed to answer one question: **where is the analysis
 | 1. Scalable workflow and reproducibility | ✅ Complete | Partitioned processing, provenance, bounded-memory execution |
 | 2. 2018 nominal analysis and validation | ✅ Complete | Nominal reconstruction, control-region validation, blinded signal-region handling |
 | 3. 2018 kinematic reconstruction | ✅ Complete | Signal-region kinematic reconstruction and completeness audit closed |
-| 4. 2018 blinded statistical model | 🔵 In progress | Derived-production closure, templates, datacards, workspaces and expected-only inference are operational; model-consistency audits remain active |
-| 5. Full systematic closure | ⏳ Planned | Validate detector, reconstruction, migration and normalization uncertainties |
+| 4. 2018 blinded statistical model | 🔵 In progress | Complete systematic model, combined workspaces, expected-only limits and background-only Asimov fit closure are operational; final statistical diagnostics remain |
+| 5. Full systematic closure | ⏳ Planned | Validate detector, reconstruction, migration and normalization uncertainties across Run 2 |
 | 6. Full Run 2 combination | ⏳ Planned | Extend to all Run 2 periods and audit inter-year correlations |
 | 7. Final review and observed result | 🔒 Gated | Freeze the analysis, complete review, then proceed to approved unblinding |
 
@@ -31,17 +31,19 @@ The public dashboard is designed to answer one question: **where is the analysis
 flowchart LR
     A[Workflow redesign\nComplete] --> B[2018 nominal validation\nComplete]
     B --> C[2018 kinematic reconstruction\nComplete]
-    C --> D[2018 blinded statistical model\nValidation active]
-    D --> E[Systematic closure\nPlanned]
+    C --> D[2018 blinded statistical model\nLate-stage validation]
+    D --> E[Run-2 systematic propagation\nPlanned]
     E --> F[Full Run 2 combination\nPlanned]
     F --> G[Final review and observed result\nGated]
 ```
 
 ## Current focus
 
-The corrected 2018 derived production has completed its closure checks while preserving the validated central nominal reconstruction. The blinded statistical-model chain is now operational through template construction, datacard generation, combined workspaces and expected-only inference. Current work is focused on model-consistency and systematic-closure audits before the 2018 model is frozen and the workflow is extended to the remaining Run 2 periods.
+The 2018 publication model now includes the accepted detector, reconstruction, migration, forward-proton and statistical uncertainty treatments required by the current analysis scope. Per-channel and combined statistical models are reproducible, expected-only inference is operational, and the background-only Asimov fit closes successfully while the observed signal region remains blinded.
 
-Production provenance for the completed 2018 campaigns has also been consolidated in the private analysis workflow so that the reconstruction, validation and statistical-model steps remain traceable and reproducible.
+The remaining 2018 work is concentrated in the final statistical-validation layer: explicit profile-likelihood scans, nuisance pulls and impacts, pre/post-fit validation plots, goodness-of-fit, channel-consistency checks, sparse-bin/MC-statistical stability, and the final provenance freeze. Once these gates pass, 2018 can be considered technically publication-complete while still blinded.
+
+Production provenance for the completed 2018 campaigns is maintained in the private analysis workflow so reconstruction, systematic propagation, template construction and statistical validation remain traceable and reproducible.
 
 ## Status policy
 
