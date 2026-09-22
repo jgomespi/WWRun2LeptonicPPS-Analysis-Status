@@ -5,7 +5,7 @@ Public, high-level progress dashboard for a Run 2 leptonic diboson analysis with
 **Public dashboard:** https://jgomespi.github.io/WWRun2LeptonicPPS-Analysis-Status/  
 **Current phase:** 2018 blinded statistical-model validation.  
 **Milestone progress:** 3 of 7 major phases complete; phase 4 is in late-stage validation.  
-**Last updated:** 21 September 2026.
+**Last updated:** 22 September 2026.
 
 ## Public scope
 
@@ -20,7 +20,7 @@ The public dashboard is designed to answer one question: **where is the analysis
 | 1. Scalable workflow and reproducibility | ✅ Complete | Partitioned processing, provenance, bounded-memory execution |
 | 2. 2018 nominal analysis and validation | ✅ Complete | Nominal reconstruction, control-region validation, blinded signal-region handling |
 | 3. 2018 kinematic reconstruction | ✅ Complete | Signal-region kinematic reconstruction and completeness audit closed |
-| 4. 2018 blinded statistical model | 🔵 In progress | Expected-only inference, background-only Asimov fit, profile-likelihood and nuisance pull/constraint validation are closed; nuisance impacts are next |
+| 4. 2018 blinded statistical model | 🔵 In progress | Expected-only inference, background-only Asimov fit, profile-likelihood, nuisance diagnostics and blinded nuisance impacts are closed; pre/post-fit validation is active |
 | 5. Full systematic closure | ⏳ Planned | Validate detector, reconstruction, migration and normalization uncertainties across Run 2 |
 | 6. Full Run 2 combination | ⏳ Planned | Extend to all Run 2 periods and audit inter-year correlations |
 | 7. Final review and observed result | 🔒 Gated | Freeze the analysis, complete review, then proceed to approved unblinding |
@@ -39,9 +39,9 @@ flowchart LR
 
 ## Current focus
 
-The 2018 publication model now includes the accepted detector, reconstruction, migration, forward-proton and statistical uncertainty treatments required by the current analysis scope. Per-channel and combined statistical models are reproducible; expected-only inference, the background-only Asimov fit, profile-likelihood validation and nuisance pull/constraint diagnostics are closed while the observed signal region remains blinded.
+The 2018 publication model now includes the accepted detector, reconstruction, migration, forward-proton and statistical uncertainty treatments required by the current analysis scope. Per-channel and combined statistical models are reproducible; expected-only inference, the background-only Asimov fit, profile-likelihood validation, nuisance diagnostics and blinded nuisance impacts are closed while the observed signal region remains blinded.
 
-The remaining 2018 work is concentrated in the final statistical-validation layer, beginning with blinded nuisance impacts, followed by pre/post-fit validation plots, goodness-of-fit, channel-consistency checks, sparse-bin/MC-statistical stability, and the final provenance freeze. Once these gates pass, 2018 can be considered technically publication-complete while still blinded.
+Gate 4C blinded nuisance impacts are complete. Gate 4D pre/post-fit validation plots are the active next step, followed by goodness-of-fit, channel-consistency checks, sparse-bin/MC-statistical stability, and the final provenance freeze. The full 2018 milestone remains in progress. Once these gates pass, 2018 can be considered technically publication-complete while still blinded.
 
 Production provenance for the completed 2018 campaigns is maintained in the private analysis workflow so reconstruction, systematic propagation, template construction and statistical validation remain traceable and reproducible.
 
