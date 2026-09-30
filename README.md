@@ -41,7 +41,7 @@ flowchart LR
 
 The 2018 analysis is now technically publication-complete while remaining blinded. Its nominal processing, kinematic reconstruction, systematic-uncertainty treatment, statistical model, expected-only validation, channel-consistency checks, goodness-of-fit studies and deterministic provenance freeze are closed.
 
-The active work is the propagation of that frozen architecture to the remaining Run 2 periods. The 2017 workflow has completed its main raw-processing and calibration stages and is currently closing generator-level normalization bookkeeping before the final 2017 normalization contract and nominal derived production are frozen. The same validated contracts will then be propagated to 2016.
+The active work is the propagation of that frozen architecture to the remaining Run 2 periods. The 2017 workflow has completed its main raw-processing and calibration stages, its generator-bookkeeping source routing has been validated, and the remaining normalization-bookkeeping production is now running before the final 2017 normalization contract and nominal derived production are frozen. The same validated contracts will then be propagated to 2016.
 
 This stage is deliberately conservative: the analysis reuses the accepted 2018 architecture rather than redesigning year-specific workflows. Publicly relevant progress is therefore measured by closure of reproducibility, normalization, systematic and combination gates rather than by individual batch jobs or internal dataset details.
 
