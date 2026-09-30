@@ -3,9 +3,9 @@
 Public, high-level progress dashboard for a Run 2 leptonic diboson analysis with forward proton tagging.
 
 **Public dashboard:** https://jgomespi.github.io/WWRun2LeptonicPPS-Analysis-Status/  
-**Current phase:** 2018 blinded statistical-model validation.  
-**Milestone progress:** 3 of 7 major phases complete; phase 4 is in late-stage validation.  
-**Last updated:** 22 September 2026.
+**Current phase:** Full Run 2 propagation — 2017 processing and normalization validation.  
+**Milestone progress:** 4 of 7 major phases complete; phase 5 is in progress.  
+**Last updated:** 30 September 2026.
 
 ## Public scope
 
@@ -20,9 +20,9 @@ The public dashboard is designed to answer one question: **where is the analysis
 | 1. Scalable workflow and reproducibility | ✅ Complete | Partitioned processing, provenance, bounded-memory execution |
 | 2. 2018 nominal analysis and validation | ✅ Complete | Nominal reconstruction, control-region validation, blinded signal-region handling |
 | 3. 2018 kinematic reconstruction | ✅ Complete | Signal-region kinematic reconstruction and completeness audit closed |
-| 4. 2018 blinded statistical model | 🔵 In progress | Expected-only inference, background-only Asimov fit, profile-likelihood, nuisance diagnostics and blinded nuisance impacts are closed; pre/post-fit validation is active |
-| 5. Full systematic closure | ⏳ Planned | Validate detector, reconstruction, migration and normalization uncertainties across Run 2 |
-| 6. Full Run 2 combination | ⏳ Planned | Extend to all Run 2 periods and audit inter-year correlations |
+| 4. 2018 blinded publication model | ✅ Complete | Statistical model, systematic treatment, expected-only validation and blinded provenance freeze closed |
+| 5. Full Run 2 propagation | 🔵 In progress | Apply the frozen 2018 architecture to 2017 and 2016, including normalization and systematic bookkeeping |
+| 6. Full Run 2 combination | ⏭ Next | Combine validated Run 2 periods and audit inter-year correlations |
 | 7. Final review and observed result | 🔒 Gated | Freeze the analysis, complete review, then proceed to approved unblinding |
 
 ## Workflow
@@ -31,19 +31,21 @@ The public dashboard is designed to answer one question: **where is the analysis
 flowchart LR
     A[Workflow redesign\nComplete] --> B[2018 nominal validation\nComplete]
     B --> C[2018 kinematic reconstruction\nComplete]
-    C --> D[2018 blinded statistical model\nLate-stage validation]
-    D --> E[Run-2 systematic propagation\nPlanned]
-    E --> F[Full Run 2 combination\nPlanned]
+    C --> D[2018 blinded publication model\nComplete]
+    D --> E[Run-2 propagation\n2017 active]
+    E --> F[Full Run 2 combination\nNext]
     F --> G[Final review and observed result\nGated]
 ```
 
 ## Current focus
 
-The 2018 publication model now includes the accepted detector, reconstruction, migration, forward-proton and statistical uncertainty treatments required by the current analysis scope. Per-channel and combined statistical models are reproducible; expected-only inference, the background-only Asimov fit, profile-likelihood validation, nuisance diagnostics and blinded nuisance impacts are closed while the observed signal region remains blinded.
+The 2018 analysis is now technically publication-complete while remaining blinded. Its nominal processing, kinematic reconstruction, systematic-uncertainty treatment, statistical model, expected-only validation, channel-consistency checks, goodness-of-fit studies and deterministic provenance freeze are closed.
 
-Gate 4C blinded nuisance impacts are complete. Gate 4D pre/post-fit validation plots are the active next step, followed by goodness-of-fit, channel-consistency checks, sparse-bin/MC-statistical stability, and the final provenance freeze. The full 2018 milestone remains in progress. Once these gates pass, 2018 can be considered technically publication-complete while still blinded.
+The active work is the propagation of that frozen architecture to the remaining Run 2 periods. The 2017 workflow has completed its main raw-processing and calibration stages and is currently closing generator-level normalization bookkeeping before the final 2017 normalization contract and nominal derived production are frozen. The same validated contracts will then be propagated to 2016.
 
-Production provenance for the completed 2018 campaigns is maintained in the private analysis workflow so reconstruction, systematic propagation, template construction and statistical validation remain traceable and reproducible.
+This stage is deliberately conservative: the analysis reuses the accepted 2018 architecture rather than redesigning year-specific workflows. Publicly relevant progress is therefore measured by closure of reproducibility, normalization, systematic and combination gates rather than by individual batch jobs or internal dataset details.
+
+Observed signal-region data remain blinded. No observed fit or observed limit is part of the current workflow.
 
 ## Status policy
 
